@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello from Enhub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Light background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease; /* Smooth transition for background changes */
+        }
+
+        #app {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+            padding: 30px;
+            text-align: center;
+            width: 90%;
+            max-width: 700px; /* Increased max-width for larger screens */
+            transition: box-shadow 0.3s ease; /* Smooth transition for shadow changes */
+            border: 1px solid #e0e0e0; /* Added border */
+        }
+
+        h1 {
+            color: #4c51bf; /* A vibrant purple */
+            margin-bottom: 25px;
+            font-size: 2.5em; /* Larger heading */
+            letter-spacing: -0.02em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05); /* Subtle text shadow */
+        }
+
+        p {
+            color: #667085; /* Darker, more readable gray */
+            font-size: 1.1em; /* Slightly larger font */
+            line-height: 1.7; /* Improved line height for better readability */
+            margin-bottom: 30px; /* Increased margin */
+            text-align: justify; /* Justified text for a cleaner look */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the list items */
+        }
+
+        ul li {
+            background-color: #825ee3; /* A bright violet */
+            color: white;
+            padding: 12px 25px; /* Slightly increased padding */
+            margin: 8px 12px; /* Added horizontal margin between items */
+            border-radius: 6px;
+            font-size: 1.1em; /* Slightly larger font */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+            display: inline-flex; /* Use inline-flex for better alignment */
+            align-items: center;
+        }
+
+        ul li:hover {
+            background-color: #6339c3; /* Darker violet on hover */
+            transform: translateY(-4px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+        }
+
+        ul li:active {
+            background-color: #552ec1; /* Even darker violet on active */
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on active */
+        }
+
+
+        a {
+            color: #825ee3; /* Same violet as the list */
+            text-decoration: none;
+            font-weight: 600; /* Make links bold */
+            transition: color 0.3s ease; /* Smooth color transition */
+            display: inline-flex; /* Use inline-flex for better alignment */
+            align-items: center;
+        }
+
+        a:hover {
+            color: #6339c3; /* Darker violet on hover */
+        }
+
+        a:active {
+            color: #552ec1;
+        }
+
+       /* Added media query for smaller screens */
+        @media (max-width: 768px) {
+            #app {
+                width: 95%;
+                padding: 20px;
+            }
+            ul li {
+                margin: 6px 8px;
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            h1{
+                font-size: 2em;
+            }
+            p{
+                font-size: 1em;
+                line-height: 1.6;
+            }
+        }
+        /* Added media query for even smaller screens */
+        @media (max-width: 480px) {
+            #app {
+                width: 100%;
+                padding: 15px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            ul li {
+                margin: 8px 0;
+                width: 90%;
+                text-align: center;
+            }
+            h1{
+                font-size: 1.75em;
+            }
+            p{
+                font-size: 0.95em;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Hello from Enhub</h1>
+        <p>
+            Welcome to our vibrant application! We've designed this space to be both visually appealing and user-friendly.  Explore the features below and discover how we can help you.  Our goal is to provide a seamless and engaging experience. We believe in creating applications that are not only functional but also a joy to use.
+        </p>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Feature 4</li>
+            <li>Feature 5</li>
+        </ul>
+        <p>
+            Learn more about our mission and values <a href="#">here</a>.
+        </p>
+    </div>
+</body>
+</html>
+
