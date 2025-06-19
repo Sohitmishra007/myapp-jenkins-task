@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "sohitmishra/flaskapp"
+        IMAGE_NAME = "sohit007/flaskapp"  // ✅ Use correct DockerHub username
     }
 
     stages {
@@ -38,7 +38,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
-                // Add your ssh deploy steps here
+                // 🛠️ Add deployment logic here (SSH, Docker run, K8s, etc.)
             }
         }
     }
